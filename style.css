@@ -1,0 +1,120 @@
+
+.fParrafo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    opacity: 77%;
+}
+
+.tituloParrafo{
+font-size: 24px;
+font-family: 'Roboto', sans-serif;
+font-weight: 800;
+text-align: justify
+}
+
+.textSale
+{
+font-size: 96px;
+font-weight: 700;
+}
+
+.iconBlock{
+    display:inline;
+}
+.wrapper{
+    display:grid;
+   
+    place-items:center
+  }
+
+
+  /* limitar texto en pantalla pequeña */
+
+
+
+  @media only screen 
+   and (max-width : 400px) {
+
+     .limit{
+       color: aqua;
+        height: 15%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: none
+     }
+  
+     .textSale
+{
+font-size: 46px;
+font-weight: 700;
+}
+  
+}
+
+
+
+.ventana{
+  background-color:rgb(245, 245, 245);
+  width:600px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:-250px;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#IrVentanaFlotante:target{
+  opacity:1;
+  pointer-events:auto;
+}
+#popup {     
+  left: 0;     
+  position: absolute;     
+  top: 0;     
+  width: 100%;     
+  z-index: 1001; 
+  }   
+  .content-popup {    
+  margin:0px auto;     
+  margin-top:120px;     
+  position:relative;     
+  padding:10px;     
+  width:500px;     
+  min-height:250px;     
+  border-radius:4px;     
+  background-color:#FFFFFF;     
+  box-shadow: 0 2px 5px #666666; 
+  }   
+  .content-popup h2 {     
+  color:#48484B;     
+  border-bottom: 1px solid #48484B;     
+  margin-top: 0;     
+  padding-bottom: 4px; 
+  }   
+  .popup-overlay {     
+  left: 0;     
+  position: absolute;     
+  top: 0;     
+  width: 100%;     
+  z-index: 999;     
+  display:none;     
+  background-color: #777777;     
+  cursor: pointer;     
+  opacity: 0.7; 
+  }   
+  .close {     
+  position: absolute;     
+  right: 15px; 
+  } 
+
+
+  
